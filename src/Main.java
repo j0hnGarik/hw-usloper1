@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String... args) {
         System.out.println("задача 1");
-        int age = 22;
-        if (age > 18) {
+        int age = 18;
+        if (age >= 18) {
             System.out.println("Если возраст человека равен " + age + " то он совершеннолетний");
         } else{
                 System.out.println("Если возраст человека равен " + age + " то он несовершеннолетний");
@@ -36,29 +36,28 @@ public class Main {
             System.out.println("если возраст человека равен " + a + " то ему надо ходить на работу");
         }
         System.out.println("задача 5");
-        int childAge = 10;
+        int childAge = 5;
         if (childAge < 5) {
             System.out.println("если возраст ребенка равен " + childAge + " то ему нельзя кататься на аттракционе");
         }
-        if (childAge > 5 && childAge < 14) {
+        if (childAge >= 5 && childAge < 14) {
             System.out.println("если возраст ребенка равен " + childAge + " то ему можно кататься на аттракционе в сопровождении взрослого");
         }
-        if (childAge > 14) {
+        if (childAge >= 14) {
             System.out.println("если возраст ребенка равен " + childAge + "то ему можно кататься на аттракционе без сопровождения взрослого");
         }
         System.out.println("задача 6");
-        int passengers = 103;
+        int passengers = 102;
         int carriegeCapacity = 102;
         int seating = 60;
         int stand = (carriegeCapacity - seating);
-        if (passengers < 60) {
+        if (passengers <= 60) {
             System.out.println("в вагоне есть сидячие места");
         }
-        if (passengers > 60) {
+        if (passengers > 60 && passengers < 102) {
             System.out.println("в вагоне есть стоячие места");
-        }
-        if (passengers > carriegeCapacity) {
-            System.out.println("вагон уже полнстью забит");
+        } else {
+            System.out.println("вагон уже полностью забит");
         }
         System.out.println("задача 7");
         int one = 5;
